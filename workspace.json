@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "rorng-kun-be": "apps/rorng-kun-be",
+    "rorng-kun-fe": "apps/rorng-kun-fe",
+    "rorng-kun-fe-e2e": "apps/rorng-kun-fe-e2e"
+  }
+}

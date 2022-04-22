@@ -1,0 +1,52 @@
+{
+  "root": "apps/rorng-kun-be",
+  "sourceRoot": "apps/rorng-kun-be/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/rorng-kun-be",
+        "main": "apps/rorng-kun-be/src/main.ts",
+        "tsConfig": "apps/rorng-kun-be/tsconfig.app.json",
+        "assets": ["apps/rorng-kun-be/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/rorng-kun-be/src/environments/environment.ts",
+              "with": "apps/rorng-kun-be/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:node",
+      "options": {
+        "buildTarget": "rorng-kun-be:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/rorng-kun-be/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/rorng-kun-be"],
+      "options": {
+        "jestConfig": "apps/rorng-kun-be/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
