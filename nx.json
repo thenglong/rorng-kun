@@ -29,7 +29,7 @@
       }
     ]
   },
-  "defaultProject": "rorng-kun-be",
+  "defaultProject": "api",
   "generators": {
     "@nrwl/react": {
       "application": {

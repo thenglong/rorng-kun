@@ -1,26 +1,16 @@
 {
   "extends": [
-    "plugin:@nrwl/nx/react-typescript",
-    "../../.eslintrc.json",
-    "next",
-    "next/core-web-vitals",
+    "..\\..\\.eslintrc.json",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:prettier/recommended"
   ],
   "ignorePatterns": ["!**/*"],
+  "plugins": ["import", "@typescript-eslint/eslint-plugin"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "rules": {
-        "@next/next/no-html-link-for-pages": [
-          "error",
-          "apps/rorng-kun-fe/pages"
-        ]
-      }
+      "rules": {}
     },
     {
       "files": ["*.ts", "*.tsx"],
@@ -31,9 +21,6 @@
       "rules": {}
     }
   ],
-  "env": {
-    "jest": true
-  },
   "rules": {
     "no-console": "error",
     "eqeqeq": ["error", "always"],
@@ -45,22 +32,18 @@
         "varsIgnorePattern": "^_"
       }
     ],
-    "react/jsx-curly-brace-presence": ["error", "never"],
-    "react/react-in-jsx-scope": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "error",
     "import/order": [
       "error",
       {
         "groups": ["builtin", "external", "internal"],
         "pathGroups": [
           {
-            "pattern": "react",
+            "pattern": "express",
             "group": "external",
             "position": "before"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["react"],
+        "pathGroupsExcludedImportTypes": ["express"],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",

@@ -1,6 +1,6 @@
 {
-  "root": "apps/rorng-kun-fe",
-  "sourceRoot": "apps/rorng-kun-fe",
+  "root": "apps/web-client",
+  "sourceRoot": "apps/web-client",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,8 +8,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/rorng-kun-fe",
-        "outputPath": "dist/apps/rorng-kun-fe"
+        "root": "apps/web-client",
+        "outputPath": "dist/apps/web-client"
       },
       "configurations": {
         "development": {},
@@ -20,16 +20,16 @@
       "executor": "@nrwl/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "rorng-kun-fe:build",
+        "buildTarget": "web-client:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "rorng-kun-fe:build:development",
+          "buildTarget": "web-client:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "rorng-kun-fe:build:production",
+          "buildTarget": "web-client:build:production",
           "dev": false
         }
       }
@@ -37,14 +37,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "rorng-kun-fe:build:production"
+        "buildTarget": "web-client:build:production"
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/rorng-kun-fe"],
+      "outputs": ["coverage/apps/web-client"],
       "options": {
-        "jestConfig": "apps/rorng-kun-fe/jest.config.ts",
+        "jestConfig": "apps/web-client/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -52,7 +52,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/rorng-kun-fe/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/web-client/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

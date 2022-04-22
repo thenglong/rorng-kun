@@ -1,8 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "rorng-kun-be": "apps/rorng-kun-be",
-    "rorng-kun-fe": "apps/rorng-kun-fe",
-    "rorng-kun-fe-e2e": "apps/rorng-kun-fe-e2e"
+    "api": "apps/api",
+    "web-client": "apps/web-client",
+    "web-client-e2e": "apps/web-client-e2e"
   }
 }
