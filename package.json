@@ -30,7 +30,7 @@
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@nrwl/cli": "^14.0.2",
-    "@nrwl/cypress": "14.0.1",
+    "@nrwl/cypress": "14.0.2",
     "@nrwl/eslint-plugin-nx": "^14.0.2",
     "@nrwl/express": "^14.0.2",
     "@nrwl/jest": "^14.0.2",
