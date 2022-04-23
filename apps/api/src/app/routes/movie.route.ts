@@ -8,7 +8,7 @@ import {
 } from "express-joi-validation"
 import * as Joi from "joi"
 
-import { createMovie, getMovies } from "../services/movie.servce"
+import { createMovie, getMovies } from "../services/movie.service"
 
 const validator = createValidator()
 
