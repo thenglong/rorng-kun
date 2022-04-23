@@ -1,0 +1,126 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  CUSTOMER
+}
+
+model User {
+  id          Int    @id @default(autoincrement())
+  firstName   String
+  lastName    String
+  phoneNumber String
+  email       String
+  password    String
+  role        Role[]
+}
+
+model Movie {
+  id             Int              @id @default(autoincrement())
+  title          String           @db.VarChar(255)
+  posterUrl      String?          @db.VarChar(255)
+  backdropUrl    String?          @db.VarChar(255)
+  trailerUrl     String?          @db.VarChar(255)
+  language       String? // TODO
+  genre          String? // TODO
+  director       String? // TODO
+  cast           String? // TODO
+  description    String?
+  duration       Int?
+  releaseData    DateTime?        @db.Timestamptz(3)
+  ScheduledMovie ScheduledMovie[]
+}
+
+model ScheduledMovie {
+  id        Int      @id @default(autoincrement())
+  movieId   Int
+  movie     Movie    @relation(fields: [movieId], references: [id])
+  hallId    Int
+  hall      Hall     @relation(fields: [hallId], references: [id])
+  startDate DateTime @db.Timestamptz(3)
+  endDate   DateTime @db.Timestamptz(3)
+  price     Float
+}
+
+model Cinema {
+  id          Int     @id @default(autoincrement())
+  name        String  @db.VarChar(255)
+  address     String  @db.VarChar(255)
+  city        String  @db.VarChar(255)
+  latitude    Float?
+  longitude   Float?
+  phone       String? @db.VarChar(255)
+  email       String? @db.VarChar(255)
+  description String? @db.VarChar(255)
+  openingTime String? @db.VarChar(255)
+  closingTime String? @db.VarChar(255)
+  imageUrl    String? @db.VarChar(255)
+  Hall        Hall[]
+}
+
+model Hall {
+  id             Int              @id @default(autoincrement())
+  name           String           @db.VarChar(255)
+  capacity       Int
+  cinemaId       Int
+  cinema         Cinema           @relation(fields: [cinemaId], references: [id])
+  Row            Row[]
+  ScheduledMovie ScheduledMovie[]
+}
+
+model Row {
+  id     Int    @id @default(autoincrement())
+  hallId Int
+  hall   Hall   @relation(fields: [hallId], references: [id])
+  name   String @db.VarChar(10)
+  Seat   Seat[]
+}
+
+model SeatType {
+  id   Int    @id @default(autoincrement())
+  name String @db.VarChar(255)
+  Seat Seat[]
+}
+
+model Seat {
+  id            Int          @id @default(autoincrement())
+  rowId         Int
+  row           Row          @relation(fields: [rowId], references: [id])
+  number        Int
+  name          String       @db.VarChar(255)
+  typeId        Int
+  type          SeatType     @relation(fields: [typeId], references: [id])
+  reservationId Int?
+  reservation   Reservation? @relation(fields: [reservationId], references: [id])
+}
+
+model Reservation {
+  id          Int      @id @default(autoincrement())
+  startAt     DateTime @db.Timestamptz(3)
+  Seat        Seat[]
+  ticketPrice Int
+  totalPrice  Int
+  movieId     Int
+  cinemaId    Int
+  userId      Int
+  phoneNumber String
+}
+
+model Showtime {
+  id        Int      @id @default(autoincrement())
+  startAt   DateTime @db.Timestamptz(3)
+  startDate DateTime @db.Timestamptz(3)
+  endDate   DateTime @db.Timestamptz(3)
+  movieId   Int
+  cinemaId  Int
+}

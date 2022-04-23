@@ -16,10 +16,7 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
-        "@next/next/no-html-link-for-pages": [
-          "error",
-          "apps/rorng-kun-fe/pages"
-        ]
+        "@next/next/no-html-link-for-pages": ["error", "apps/web-client/pages"]
       }
     },
     {
