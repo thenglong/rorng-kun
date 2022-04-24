@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+
 import { MantineProvider } from "@mantine/core"
 import { BrowserRouter } from "react-router-dom"
 

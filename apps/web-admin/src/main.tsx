@@ -1,5 +1,7 @@
 import { StrictMode } from "react"
+
 import * as ReactDOM from "react-dom/client"
+
 import AppProvider from "./components/app-provider/app-provider"
 import App from "./components/app/app"
 
