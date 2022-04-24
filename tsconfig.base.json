@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "noPropertyAccessFromIndexSignature": false,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@rorng-kun/common": ["libs/common/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
