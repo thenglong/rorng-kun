@@ -6,7 +6,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate-admin-favicon": "ts-node --esm -O \"{\\\"module\\\": \\\"commonjs\\\"}\" ./apps/web-admin/favicons/generate-favicons.ts"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +19,7 @@
     "express": "^4.17.3",
     "express-joi-validation": "^5.0.1",
     "express-winston": "^4.2.0",
+    "favicons": "^7.0.0-beta.4",
     "firebase": "^9.6.11",
     "firebase-admin": "^10.1.0",
     "helmet": "^5.0.2",
@@ -29,6 +31,7 @@
     "react-router-dom": "^6.3.0",
     "redux-logger": "^3.0.6",
     "regenerator-runtime": "0.13.9",
+    "sharp": "^0.30.4",
     "tabler-icons-react": "^1.46.0",
     "tslib": "^2.4.0",
     "winston": "^3.7.2"
@@ -56,6 +59,7 @@
     "@types/react": "18.0.6",
     "@types/react-dom": "18.0.2",
     "@types/redux-logger": "^3.0.9",
+    "@types/sharp": "^0.30.2",
     "@typescript-eslint/eslint-plugin": "~5.20.0",
     "@typescript-eslint/parser": "~5.20.0",
     "babel-jest": "27.5.1",
