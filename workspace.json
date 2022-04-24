@@ -2,6 +2,8 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
+    "web-admin": "apps/web-admin",
+    "web-admin-e2e": "apps/web-admin-e2e",
     "web-client": "apps/web-client",
     "web-client-e2e": "apps/web-client-e2e"
   }
