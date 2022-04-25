@@ -1,13 +1,16 @@
 import { Button } from "@mantine/core"
-import { useRoutes } from "react-router-dom"
-
-import { getRoutes } from "../../routes"
 
 export function App() {
-  const routes = getRoutes(!!firebaseUser)
-  const router = useRoutes(routes)
+  // const routes = getRoutes(!!firebaseUser)
+  // const router = useRoutes(routes)
 
-  return <Button>Have</Button>
+  return (
+    <>
+      <Button>REACT_APP_VAR {process.env.REACT_APP_VAR}</Button>
+      <Button>APP_VAR {process.env.APP_VAR}</Button>
+      <Button>NX_VAR {process.env.NX_VAR}</Button>
+    </>
+  )
 }
 
 export default App

@@ -51,7 +51,8 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "web-admin:build",
-        "hmr": true
+        "hmr": true,
+        "proxyConfig": "apps/web-admin/proxy.conf.json"
       },
       "configurations": {
         "development": {
