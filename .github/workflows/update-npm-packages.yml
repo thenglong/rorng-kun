@@ -31,7 +31,7 @@ jobs:
 
       - name: Upgrade packages 🔀
         run: |
-          npm i
+          npm i --force
           npm update --force
 
       - name: Commit and create PR 🔀
