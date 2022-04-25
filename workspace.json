@@ -3,6 +3,8 @@
   "projects": {
     "api": "apps/api",
     "common": "libs/common",
+    "mobile": "apps/mobile",
+    "mobile-e2e": "apps/mobile-e2e",
     "web-admin": "apps/web-admin",
     "web-admin-e2e": "apps/web-admin-e2e",
     "web-client": "apps/web-client",
