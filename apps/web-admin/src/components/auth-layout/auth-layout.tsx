@@ -1,11 +1,15 @@
-/* eslint-disable-next-line */
-export interface AuthLayoutProps {}
+import { Suspense } from "react"
 
-export function AuthLayout(_props: AuthLayoutProps) {
+import { Box, LoadingOverlay } from "@mantine/core"
+import { Outlet } from "react-router-dom"
+
+export function AuthLayout() {
   return (
-    <div>
-      <h1>Welcome to AuthLayout!</h1>
-    </div>
+    <Suspense fallback={<LoadingOverlay visible />}>
+      <Box sx={{ height: "100vh" }}>
+        <Outlet />
+      </Box>
+    </Suspense>
   )
 }
 
