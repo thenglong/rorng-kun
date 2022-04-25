@@ -15,7 +15,7 @@
     "@prisma/client": "^3.12.0",
     "@reduxjs/toolkit": "^1.8.1",
     "core-js": "^3.22.2",
-    "express": "^4.17.3",
+    "express": "^4.18.0",
     "express-joi-validation": "^5.0.1",
     "express-winston": "^4.2.0",
     "firebase": "^9.6.11",
