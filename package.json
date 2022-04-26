@@ -43,7 +43,7 @@
     "@nrwl/eslint-plugin-nx": "^14.0.2",
     "@nrwl/express": "^14.0.2",
     "@nrwl/jest": "^14.0.2",
-    "@nrwl/linter": "^14.0.2",
+    "@nrwl/linter": "^14.0.3",
     "@nrwl/next": "^14.0.2",
     "@nrwl/node": "^14.0.2",
     "@nrwl/react": "14.0.2",
