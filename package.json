@@ -43,7 +43,7 @@
     "@nrwl/express": "^14.0.3",
     "@nrwl/jest": "^14.0.3",
     "@nrwl/linter": "^14.0.3",
-    "@nrwl/next": "^14.0.3",
+    "@nrwl/next": "^14.0.4",
     "@nrwl/node": "^14.0.3",
     "@nrwl/react": "14.0.3",
     "@nrwl/web": "14.0.3",
