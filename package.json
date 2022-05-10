@@ -23,7 +23,7 @@
     "helmet": "^5.0.2",
     "joi": "^17.6.0",
     "next": "12.1.6",
-    "prisma": "^3.13.0",
+    "prisma": "^3.14.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-router-dom": "^6.3.0",
