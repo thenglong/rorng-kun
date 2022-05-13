@@ -47,7 +47,7 @@
     "@nrwl/react": "14.1.5",
     "@nrwl/web": "14.1.5",
     "@nrwl/workspace": "14.1.5",
-    "@swc/core": "~1.2.181",
+    "@swc/core": "~1.2.183",
     "@swc/jest": "0.2.21",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.1.1",
