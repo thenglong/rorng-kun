@@ -10,7 +10,7 @@
   },
   "private": true,
   "dependencies": {
-    "@mantine/core": "^4.2.5",
+    "@mantine/core": "^4.2.6",
     "@mantine/hooks": "^4.2.2",
     "@prisma/client": "^3.13.0",
     "@reduxjs/toolkit": "^1.8.1",
