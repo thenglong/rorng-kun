@@ -14,7 +14,7 @@
     "@mantine/hooks": "^4.2.2",
     "@prisma/client": "^3.13.0",
     "@reduxjs/toolkit": "^1.8.2",
-    "core-js": "^3.6.5",
+    "core-js": "^3.22.7",
     "express": "4.17.2",
     "express-joi-validation": "^5.0.1",
     "express-winston": "^4.2.0",
