@@ -42,7 +42,7 @@
     "@nrwl/express": "14.2.4",
     "@nrwl/jest": "14.2.4",
     "@nrwl/linter": "14.2.4",
-    "@nrwl/next": "14.2.4",
+    "@nrwl/next": "14.3.1",
     "@nrwl/node": "14.2.4",
     "@nrwl/react": "14.2.4",
     "@nrwl/web": "14.2.4",
