@@ -40,7 +40,7 @@
     "@nrwl/cypress": "14.3.2",
     "@nrwl/eslint-plugin-nx": "14.3.2",
     "@nrwl/express": "14.3.2",
-    "@nrwl/jest": "14.3.2",
+    "@nrwl/jest": "14.3.5",
     "@nrwl/linter": "14.3.2",
     "@nrwl/next": "14.3.2",
     "@nrwl/node": "14.3.2",
