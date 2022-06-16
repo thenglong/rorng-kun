@@ -1,5 +1,4 @@
 {
-  "root": "libs/common",
   "sourceRoot": "libs/common/src",
   "projectType": "library",
   "tags": [],

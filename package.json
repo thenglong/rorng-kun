@@ -12,26 +12,19 @@
   "dependencies": {
     "@mantine/core": "^4.2.9",
     "@mantine/hooks": "^4.2.2",
-    "@prisma/client": "^3.15.2",
     "@reduxjs/toolkit": "1.8.2",
     "core-js": "^3.6.5",
-    "express": "4.17.2",
-    "express-joi-validation": "^5.0.1",
-    "express-winston": "^4.2.0",
     "firebase": "^9.8.2",
     "firebase-admin": "^10.3.0",
     "helmet": "^5.1.0",
-    "joi": "^17.6.0",
     "next": "12.1.5",
-    "prisma": "^3.15.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-router-dom": "^6.3.0",
     "redux-logger": "^3.0.6",
     "regenerator-runtime": "0.13.9",
     "tabler-icons-react": "^1.49.0",
-    "tslib": "^2.3.0",
-    "winston": "^3.7.2"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
@@ -42,6 +35,7 @@
     "@nrwl/express": "14.3.5",
     "@nrwl/jest": "14.3.5",
     "@nrwl/linter": "14.3.5",
+    "@nrwl/nest": "^14.3.5",
     "@nrwl/next": "14.3.5",
     "@nrwl/node": "14.3.5",
     "@nrwl/react": "14.3.5",
@@ -86,4 +80,3 @@
     "schema": "apps/api/schema.prisma"
   }
 }
-

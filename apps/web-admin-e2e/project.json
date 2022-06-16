@@ -1,5 +1,4 @@
 {
-  "root": "apps/web-admin-e2e",
   "sourceRoot": "apps/web-admin-e2e/src",
   "projectType": "application",
   "targets": {

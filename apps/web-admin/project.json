@@ -1,5 +1,4 @@
 {
-  "root": "apps/web-admin",
   "sourceRoot": "apps/web-admin/src",
   "projectType": "application",
   "targets": {

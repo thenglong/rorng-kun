@@ -1,5 +1,4 @@
 {
-  "root": "apps/web-client",
   "sourceRoot": "apps/web-client",
   "projectType": "application",
   "targets": {
