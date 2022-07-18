@@ -45,7 +45,7 @@
     "@nrwl/nest": "14.3.6",
     "@nrwl/next": "14.3.6",
     "@nrwl/node": "14.3.6",
-    "@nrwl/react": "14.3.6",
+    "@nrwl/react": "14.4.3",
     "@nrwl/web": "14.3.6",
     "@nrwl/workspace": "14.3.6",
     "@swc/core": "~1.2.183",
