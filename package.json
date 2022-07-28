@@ -41,7 +41,7 @@
     "@nrwl/eslint-plugin-nx": "14.3.6",
     "@nrwl/express": "14.3.6",
     "@nrwl/jest": "14.3.6",
-    "@nrwl/linter": "14.3.6",
+    "@nrwl/linter": "14.5.1",
     "@nrwl/nest": "14.3.6",
     "@nrwl/next": "14.3.6",
     "@nrwl/node": "14.3.6",
