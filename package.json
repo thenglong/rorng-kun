@@ -27,7 +27,7 @@
     "redux-logger": "^3.0.6",
     "reflect-metadata": "^0.1.13",
     "regenerator-runtime": "^0.13.9",
-    "rxjs": "^7.5.5",
+    "rxjs": "^7.5.6",
     "tabler-icons-react": "^1.54.0",
     "tslib": "^2.3.0"
   },
