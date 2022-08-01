@@ -59,7 +59,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/redux-logger": "^3.0.9",
     "@typescript-eslint/eslint-plugin": "^5.24.0",
-    "@typescript-eslint/parser": "^5.31.0",
+    "@typescript-eslint/parser": "^5.32.0",
     "babel-jest": "^27.5.1",
     "cypress": "^9.7.0",
     "eslint": "^8.15.0",
